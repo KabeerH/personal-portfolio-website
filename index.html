@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website - Kabeer Harjani</title>
+
+    <!--Link to CSS file-->
+    <link rel="stylesheet" href="./src/style.css">
+
+    <!--Link to AOS CSS file-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+</head>
+<body>
+    
+    <!--This is the navigation system-->
+    <header>
+        <nav>
+            <div id="topNav" class="theTopNav">
+                <a href="#home" class="logo">KH</a>
+                <a href="#home" class="active-nav-link">Home</a>
+                <a href="#aboutMe">About Me</a>
+                <a href="#projects">Projects</a>
+                <a href="#contactMe">Contact Me</a>
+                <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+                    <i class="hamburger-bars">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </i>
+                </a>
+            </div>
+        </nav>
+    </header>
+    
+
+    <!-- This is the home section of the website -->
+    <section id="home" class="home-page-section">
+        <h1 class="home-page-h1"> Hello. I'm <span style="color: aqua;">Kabeer Harjani.</span> </h1>
+        <!--content will be dynamically added-->
+        <p id="homeDescription" class="homeText"></p>
+        <div style="display: flex; justify-content: center; gap: 20px;">
+            <button id="resume" href="" download class="home-btn">Download Resume</button>
+            <button id="cvLetter" href="" download class="home-btn">Download Cover Letter</button>
+        </div>
+    </section>
+    <!-- Set particles.js config -->
+    <div id="particles-js" style="position: absolute; top: 0; left: 0; width: 100%; height: 100vh; z-index: -1;"></div>
+
+    <!--This is the aboutMe section-->
+    <section id="aboutMe" class="aboutMe-page-section">
+        <h2 class="aboutMe-h2" data-aos="fade-up">About Me</h2>
+        <p class="about-p" data-aos="fade-up" data-aos-delay="200">A student deeply passionate about web development and continuous learning . . .</p>
+        <div class="content-holder">
+            <img id="tabImage" src="./Assets/Images/profilePic.jpg" class="current-img" data-aos="fade-up" data-aos-delay="400">
+            <div class="button-holder" data-aos="fade-up" data-aos-delay="600">
+                <button class="tablink" onclick="openTab('Overview', this); changeImage('./Assets/Images/profilePic.jpg');" id="defaultOpen">Overview</button>
+                <button class="tablink" onclick="openTab('Hobbies', this); changeImage('./Assets/Images/hobbies.png');">Hobbies</button>
+                <button class="tablink" onclick="openTab('Education', this); changeImage('./Assets/Images/Seneca.png');"> Education </button>
+            </div>
+        </div>   
+        <div id="Overview" class="tabcontent" data-aos="fade-up" data-aos-delay="800">
+            <p>Hello! My name is Kabeer Harjani! I'm currently pursuing a Bachelor of Technology in Software Development at Seneca Polytechnic. My interest in technology and problem-solving led me to
+                 this path, and I'm thoroughly enjoying every bit of it. I'm always eager to learn and adapt to new technologies and programming languages. I believe that continuous learning is the key to growth in 
+                 this ever-evolving field. My academic journey at Seneca Polytechnic so far has provided me with a strong foundation in software development principles and practices. In addition to my coursework, I enjoy 
+                 working on personal projects and exploring new areas of technology. These experiences have helped me develop strong analytical skills and the ability to work well in teams. I'm excited about the 
+                 opportunities and challenges that lie ahead in my journey to becoming a proficient software developer. I'm committed to leveraging my skills and knowledge to contribute effectively to the tech industry.</p>
+        </div>
+        <div id="Hobbies" class="tabcontent" data-aos="fade-up" data-aos-delay="1000"> 
+            <p>In my free time, I have a few activities that I love to engage in:</p>
+            <P><span style="color: aquamarine;">Gaming</span>  <i class="fa fa-arrow-right"></i>  I'm an avid gamer who enjoys the thrill and challenge of video games. Whether it's strategy games, RPGs, or competitive games. Gaming is a great way for me to relax and engage my problem-solving skills in a fun environment.</P>
+            <p><span style="color: aquamarine;">Traveling</span>  <i class="fa fa-arrow-right"></i>  I love exploring new places and cultures. Traveling gives me the opportunity to meet new people, try new cuisines, and gain firsthand experience of different cultures. It's always an adventure that I look forward to!</p>
+            <p><span style="color: aquamarine;">Reading</span>  <i class="fa fa-arrow-right"></i>  I have a deep appreciation for literature and enjoy immersing myself in different worlds through books. Reading not only entertains me, but it also broadens my perspective and enhances my understanding of various subjects.</p>
+        </div>
+        <div id="Education" class="tabcontent" data-aos="fade-up" data-aos-delay="1200">
+            <h3>Bachelor of Technology (Software Development)</h3>
+            <h4>Seneca Polytechnic College | Toronto, ON</h4>
+            <p>September 2022 - Present | Expected graduation date  <i class="fa fa-arrow-right"></i>  Winter 2026</p>
+            <ul>
+                <li><span style="color: aquamarine;">President’s Honor List</span>  <i class="fa fa-arrow-right"></i>  Achieved a perfect 4.0 GPA in Fall 2022, earning a spot on the President’s Honor List for outstanding academic performance.</li> <br>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="projects" class="projects-section">
+        <h2 class="project-header">PROJECTS</h2>
+        <div id="projectContainer" class="project-div">
+            <!-- Projects containers will be dynamically added here -->
+        </div>
+    </section>
+
+    <!-- Tech stack section -->
+    <section id="techstack" class="techstack-section">
+        <h2 class="techHeader">Tech Stacks</h2>
+        <div class="tech-container">
+            <div class="tech-box" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="100" data-aos-duration="1000">
+                <img src= "./Assets/Images/htmlTechStack.png" class="tech-img" >
+            </div>
+            <div class="tech-box" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="200" data-aos-duration="1000">
+                <img src="./Assets/Images/cssTechStack.png" alt="CSS" class="tech-img" >
+            </div>
+            <div class="tech-box" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="300" data-aos-duration="1000">
+                <img src="./Assets/Images/javascriptTechStack.jpeg" alt="JavaScript" class="tech-img">
+            </div>
+            <div class="tech-box" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="400" data-aos-duration="1000">
+                <img src="./Assets/Images/nodeTechStack.png" alt="node" class="tech-img">
+            </div>
+            <div class="tech-box" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="500" data-aos-duration="1000">
+                <img src="./Assets/Images/reactTechStack.png" alt="react" class="tech-img">
+            </div>
+            <div class="tech-box" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="600" data-aos-duration="1000">
+                <img src="./Assets/Images/mongodbTechStack.png" alt="mongodb" class="tech-img">
+            </div>
+            <div class="tech-box" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="700" data-aos-duration="1000">
+                <img src="./Assets/Images/boothstrapTechStack.png" alt="boothstrap" class="tech-img">
+            </div>
+            <div class="tech-box" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="800" data-aos-duration="1000">
+                <img src="./Assets/Images/mysqlTechStack.png" alt="sql" class="tech-img">
+            </div>
+            <div class="tech-box" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="900" data-aos-duration="1000">
+                <img src="./Assets/Images/jsonTechStack.jpg" alt="json" class="tech-img">
+            </div>
+            <div class="tech-box" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="1000" data-aos-duration="1000">
+                <img src="./Assets/Images/jiraTechStack.jpg" alt="jira" class="tech-img">
+            </div>
+            <div class="tech-box" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="1100" data-aos-duration="1000">
+                <img src="./Assets/Images/gitTechStack.png" alt="jira" class="tech-img">
+            </div>
+            <div class="tech-box" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="1200" data-aos-duration="1000">
+                <img src="./Assets/Images/c++TechStack.png" alt="c++" class="tech-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Page --> 
+    <section id="contactMe" class="contact-section">
+        <h2 class="contact-header">CONTACT ME</h2>
+        <form action="https://formsubmit.co/kabeerharjani@gmail.com" method="POST" style="width: 80%; max-width: 600px;">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="name" id="name" name="name"  placeholder="Enter your name...">
+                <span id="nameError" class="error-span"></span>
+            </div>
+      
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"  placeholder="Enter your email...">
+                <span id="emailError" class="error-span"></span>
+            </div>
+      
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" type="message" placeholder="Enter a message..." style="height: 150px; resize: none;"></textarea>
+              <span id="messageError" class="error-span"></span>
+            </div>
+          
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </section>
+
+    <!-- Quote section (mini tab)-->
+    <section class="quote-section">
+        <h2 class="quote-header">INSPIRATION</h2>
+        <p class="quote-p">“Design is not just what it looks like and feels like. Design is how it works. Innovation distinguishes between a leader and a follower. Remembering that you are going to die is the best way I know to avoid the trap of thinking you have something to lose. You are already naked. There is no reason not to follow your heart.” - <span style="color: red; font-weight: 700;">Steve Jobs</span></p>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="footer-section">
+        <p class="footer-p">Kabeer Harjani</p>
+        <p class="footer-p">© 2024 Kabeer Harjani &#9996;</p>
+        <div>
+            <a href="https://www.linkedin.com/in/kabeer-harjani-b3b124248/" target="_blank" style="margin-right: 10px;"><i class="fa fa-linkedin" style="color: #fff;"></i></a>
+            <a href="https://github.com/KabeerH" target="_blank" style="margin-right: 10px;"><i class="fa fa-github" style="color: #fff;"></i></a>
+        </div>
+    </footer>
+
+
+    <!--Import both Particles.js and app.js -->
+    <script src="./particles.js"></script>
+    <script src="./app.js"></script>
+
+    <!--Animate on scroll-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!--Config the AOS-->
+    <script>
+        AOS.init();
+    </script>
+
+    <!--Js script link-->
+    <script src="./Scripts/script.js"></script>
+
+</body>
+</html>
