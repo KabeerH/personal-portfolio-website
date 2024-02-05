@@ -19,6 +19,6 @@ This repository contains the source code for my personal portfolio website. The 
 - AOS - Animate on scroll API
 - FormSubmit API
 
-## Contributing
+## Feedback
 
-As this is a personal portfolio website, pull requests will not be accepted. However, if you have any suggestions or find any bugs please let know via Linkedin or the website contact-form. Thanks!
+If you have any suggestions or find any bugs please let know via Linkedin or the website contact-form. Thanks!
