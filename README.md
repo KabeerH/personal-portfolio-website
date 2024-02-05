@@ -1,4 +1,4 @@
-# Personal Portfolio Website
+# Personal Portfolio Website 🌐
 
 ## Overview
 
@@ -23,5 +23,3 @@ This repository contains the source code for my personal portfolio website. The 
 ## Contributing
 
 As this is a personal portfolio website, pull requests will not be accepted. However, if you have any suggestions or find any bugs please let know via Linkedin or the website contact-form. Thanks!
-
-
