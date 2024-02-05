@@ -5,7 +5,7 @@
 This repository contains the source code for my personal portfolio website. The website showcases me as a human, developer and what I plan to achieve
 
 ## Features
-- **Responsive Navigation bar for both PC and mobile (lower res devices)**
+- **Responsive Navigation bar**: for both PC and mobile (lower res devices)
 - **About Me**: Introduction about myself
 - **Projects**: A showcase of my projects, including descriptions, and links to the source code.
 - **Tech Stacks**: What technologies and software I know to use
