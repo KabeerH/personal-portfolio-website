@@ -6,7 +6,6 @@ This repository contains the source code for my personal portfolio website. The 
 
 ## Features
 - **About Me**: Introduction about myself
-- **Skills**: A list of my technical skills.
 - **Projects**: A showcase of my projects, including descriptions, and links to the source code.
 - **Tech Stacks**: What technologies and software I know to use
 - **Contact**: A form for visitors to send me messages or inquiries.
