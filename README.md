@@ -1,6 +1,6 @@
 # Personal Portfolio Website 🌐
 
-**Website hosted on netfly: ** https://kabeerharjani.netlify.app/
+**Website hosted on netfly:** https://kabeerharjani.netlify.app/
 
 ## Overview
 
