@@ -1,6 +1,6 @@
 # Personal Portfolio Website 🌐
 
-**Website hosted on netfly:** https://kabeerharjani.netlify.app/
+<a target='_blank'><b>Website hosted on netfly: </b>https://kabeerharjani.netlify.app/</a>
 
 ## Overview
 
@@ -25,3 +25,11 @@ This repository contains the source code for my personal portfolio website. The 
 ## Feedback
 
 If you have any suggestions or find any bugs please let know via Linkedin or the website contact-form. Thanks!
+
+## Website Version 2.0
+
+- Minor letter fixing
+- Removed Cover letter button
+- Added new project
+- Fixed authentication error with contact form (not displaying error messages upon unsuccessful input)
+- Fixed font-family for mobile devices
