@@ -329,7 +329,7 @@ section {
     align-self: flex-start; 
 }
 
-input[type="name"], input[type="email"], textarea {
+[id="name"], [id="email"], [id="message"] {
     height: 50px;
     width: 100%;
     padding: 10px;
@@ -363,7 +363,6 @@ input[type="submit"]:hover {
     transform: translateY(-2px); 
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
-
 
 .error-span {
     color: red;
