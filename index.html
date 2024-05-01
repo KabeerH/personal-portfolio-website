@@ -10,7 +10,6 @@
 
     <!--Link to AOS CSS file-->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-
 </head>
 <body>
     
@@ -42,7 +41,6 @@
         <p id="homeDescription" class="homeText"></p>
         <div style="display: flex; justify-content: center; gap: 20px;">
             <button id="resume" href="" download class="home-btn">Download Resume</button>
-            <button id="cvLetter" href="" download class="home-btn">Download Cover Letter</button>
         </div>
     </section>
     <!-- Set particles.js config -->
@@ -51,7 +49,7 @@
     <!--This is the aboutMe section-->
     <section id="aboutMe" class="aboutMe-page-section">
         <h2 class="aboutMe-h2" data-aos="fade-up">About Me</h2>
-        <p class="about-p" data-aos="fade-up" data-aos-delay="200">A student deeply passionate about web development and continuous learning . . .</p>
+        <p class="about-p" data-aos="fade-up" data-aos-delay="200">Just a computer science student deeply passionate about web development and continuous learning . . .</p>
         <div class="content-holder">
             <img id="tabImage" src="./Assets/Images/profilePic.jpg" class="current-img" data-aos="fade-up" data-aos-delay="400">
             <div class="button-holder" data-aos="fade-up" data-aos-delay="600">
@@ -78,7 +76,7 @@
             <h4>Seneca Polytechnic College | Toronto, ON</h4>
             <p>September 2022 - Present | Expected graduation date  <i class="fa fa-arrow-right"></i>  Winter 2026</p>
             <ul>
-                <li><span style="color: aquamarine;">President’s Honor List</span>  <i class="fa fa-arrow-right"></i>  Achieved a perfect 4.0 GPA in Fall 2022, earning a spot on the President’s Honor List for outstanding academic performance.</li> <br>
+                <li><span style="color: aquamarine;">President’s Honor List</span>  <i class="fa fa-arrow-right"></i>  Achieved a perfect 4.0 GPA in Winter 2024, earning a spot on the President’s Honor List for outstanding academic performance.</li> <br>
             </ul>
         </div>
     </section>
@@ -136,22 +134,25 @@
     <!-- Contact Page --> 
     <section id="contactMe" class="contact-section">
         <h2 class="contact-header">CONTACT ME</h2>
-        <form action="https://formsubmit.co/kabeerharjani@gmail.com" method="POST" style="width: 80%; max-width: 600px;">
+        <form id="contactForm" action="https://formsubmit.co/kabeerharjani@gmail.com" method="POST" style="width: 80%; max-width: 600px;">
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="name" id="name" name="name"  placeholder="Enter your name...">
+                <br>
                 <span id="nameError" class="error-span"></span>
             </div>
       
             <div class="form-group">
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email"  placeholder="Enter your email...">
+                <br>
                 <span id="emailError" class="error-span"></span>
             </div>
       
             <div class="form-group">
               <label for="message">Message:</label>
               <textarea id="message" name="message" type="message" placeholder="Enter a message..." style="height: 150px; resize: none;"></textarea>
+              <br>
               <span id="messageError" class="error-span"></span>
             </div>
           

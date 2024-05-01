@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 //Home page -> displaying text
-const descriptions = ["I'm A Web Developer. . .", "I'm A Coder. . .", "I'm A Learner. . ."];
+const descriptions = ["I'm a web developer. . .", "I'm a coder. . .", "I'm a learner. . ."];
 let currentDescription = 0;
 let currentLetter = 0;
 
@@ -130,7 +130,8 @@ const addProject = (title, description, link, imagePath) => {
     projectLink.href = link;
     projectLink.textContent = 'View Project';
     projectLink.style = 'display: inline-block; margin: 0 10px; padding: 14px 16px; text-decoration: none; color: #fff; background-color: #45a049; border: none; outline: none; cursor: pointer; font-size: 17px; width: 33.3%; transition: all 0.3s ease; border-radius: 20px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);';
-    
+    projectLink.target = '_blank'
+
     projectLink.onmouseover = function() {
         this.style.backgroundColor = '#66cc66';
         this.style.transform = 'translateY(-2px)';
@@ -191,7 +192,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
             isValid = false;
         }
     }
-
+    
     //check for message
     if (!message) {
         document.getElementById('messageError').textContent = 'Please enter your message.';

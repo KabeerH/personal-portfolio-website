@@ -49,7 +49,7 @@ section {
 }
 
 .theTopNav a.logo {
-    font-family: 'Pacifico', cursive;
+    font-family: 'Pacifico';
     color: #4CAF50;
     font-size: 24px;
     font-weight: bold;
@@ -141,7 +141,7 @@ section {
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 14px 75px;
     font-size: 17px;
     width: 33.3%;
     transition: all 0.3s ease;
@@ -323,7 +323,7 @@ section {
 }
 
 .form-group label {
-    font-family: "Monoton", cursive;
+    font-family: "Monoton";
     margin-bottom: 10px;
     font-size: 1.5em;
     align-self: flex-start; 
@@ -336,13 +336,13 @@ input[type="name"], input[type="email"], textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    font-family: "Monoton", cursive;
+    font-family: "Monoton";
     font-size: 20px;
     line-height: 1.5;
 }
 
 input[type="submit"] {
-    font-family: "Monoton", cursive;
+    font-family: "Monoton";
     width: 100%;  
     max-width: 200px;  
     background-color: #45A049;
@@ -367,7 +367,7 @@ input[type="submit"]:hover {
 
 .error-span {
     color: red;
-    font-family: "Monoton", cursive;
+    font-family: "Monoton";
     margin-bottom: 20px;
     font-weight: 900;
 }
